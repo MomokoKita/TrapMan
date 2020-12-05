@@ -26,6 +26,12 @@ public class Player : MonoBehaviour
         {
             animator.SetInteger("StateID",1);
         }
+
+        else if(Input.GetKeyDown("c"))
+        {
+            Carry();
+        }
+
         else
         {
             animator.SetInteger("StateID", 0);
@@ -48,5 +54,9 @@ public class Player : MonoBehaviour
             Player_pos = transform.position; //プレイヤーの位置を更新
 
     }
+    void Carry()
+    {
+        animator.SetInteger("StateID", 10);
 
+    }
 }
