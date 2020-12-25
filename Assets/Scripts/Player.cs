@@ -14,6 +14,7 @@ public class Player : MonoBehaviour
     //プレイヤーのアニメーション処理
     private Animator animator = null;
     private bool Carry_Flag = false;
+    private bool Carry_Flag_Idle = false;
 
 
     void Start()
@@ -39,37 +40,43 @@ public class Player : MonoBehaviour
         {
             Debug.Log("持った");
             Carry_Flag = true;
+            Carry_Flag_Idle = true;
             animator.SetInteger("StateID", 10);
         }
 
         else if (Input.GetKeyDown("space") && Carry_Flag == true)
         {
             Debug.Log("下した");
-            animator.SetInteger("StateID", 11);
+            animator.SetInteger("StateID", 12);
             Carry_Flag = false;
+            Carry_Flag_Idle = false;
+        }
+        else if (Carry_Flag_Idle)
+        {
+            animator.SetInteger("StateID", 11);
+            if (Input.GetKey("right") || Input.GetKey("left") || Input.GetKey("up") || Input.GetKey("down"))
+            {
+                animator.SetInteger("StateID", 14);
+            }
         }
 
 
         x = Input.GetAxis("Horizontal"); //x方向のInputの値を取得
         z = Input.GetAxis("Vertical"); //z方向のInputの値を取得
 
-            //プレイヤーのRigidbodyに対してInputにspeedを掛けた値で更新し移動
-            rigd.velocity = new Vector3(x * speed, 0, z * speed);
+        //プレイヤーのRigidbodyに対してInputにspeedを掛けた値で更新し移動
+        rigd.velocity = new Vector3(x * speed, 0, z * speed);
 
-            //プレイヤーがどの方向に進んでいるかがわかるように、初期位置と現在地の座標差分を取得
-            Vector3 diff = transform.position - Player_pos;
+        //プレイヤーがどの方向に進んでいるかがわかるように、初期位置と現在地の座標差分を取得
+        Vector3 diff = transform.position - Player_pos;
 
-            //ベクトルの長さが0.01fより大きい場合にプレイヤーの向きを変える処理を入れる(0では入れないので）
-            if (diff.magnitude > 0.01f)
-            {
-                //ベクトルの情報をQuaternion.LookRotationに引き渡し回転量を取得しプレイヤーを回転させる
-                transform.rotation = Quaternion.LookRotation(diff);
-            }
-            Player_pos = transform.position; //プレイヤーの位置を更新
+        //ベクトルの長さが0.01fより大きい場合にプレイヤーの向きを変える処理を入れる(0では入れないので）
+        if (diff.magnitude > 0.01f)
+        {
+            //ベクトルの情報をQuaternion.LookRotationに引き渡し回転量を取得しプレイヤーを回転させる
+            transform.rotation = Quaternion.LookRotation(diff);
+        }
+        Player_pos = transform.position; //プレイヤーの位置を更新
 
     }
-    //void Carry()
-    //{
-    //    animator.SetInteger("StateID", 10);
-    //}
 }
