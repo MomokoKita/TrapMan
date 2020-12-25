@@ -5,13 +5,16 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     //プレイヤーの移動処理
-	public float speed = 3.0f;
+    public float speed = 3.0f;
     private Vector3 Player_pos; //プレイヤーのポジション
     private float x; //x方向のImputの値
     private float z; //z方向のInputの値
     private Rigidbody rigd;
+
     //プレイヤーのアニメーション処理
     private Animator animator = null;
+    private bool Carry_Flag = false;
+
 
     void Start()
     {
@@ -25,17 +28,28 @@ public class Player : MonoBehaviour
         if (Input.GetKey("right") || Input.GetKey("left") || Input.GetKey("up") || Input.GetKey("down"))
         {
             animator.SetInteger("StateID",1);
-        }
-
-        else if(Input.GetKeyDown("c"))
-        {
-            Carry();
-        }
-
+        }        
         else
         {
             animator.SetInteger("StateID", 0);
         }
+
+        //モノを持つ判定
+        if(Input.GetKeyDown("space") && Carry_Flag == false)
+        {
+            Debug.Log("持った");
+            Carry_Flag = true;
+            animator.SetInteger("StateID", 10);
+        }
+
+        else if (Input.GetKeyDown("space") && Carry_Flag == true)
+        {
+            Debug.Log("下した");
+            animator.SetInteger("StateID", 11);
+            Carry_Flag = false;
+        }
+
+
         x = Input.GetAxis("Horizontal"); //x方向のInputの値を取得
         z = Input.GetAxis("Vertical"); //z方向のInputの値を取得
 
@@ -54,9 +68,8 @@ public class Player : MonoBehaviour
             Player_pos = transform.position; //プレイヤーの位置を更新
 
     }
-    void Carry()
-    {
-        animator.SetInteger("StateID", 10);
-
-    }
+    //void Carry()
+    //{
+    //    animator.SetInteger("StateID", 10);
+    //}
 }
