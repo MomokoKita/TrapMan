@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(AudioSource))]
 public class Player : MonoBehaviour
 {
     //プレイヤーの移動処理
@@ -16,18 +17,28 @@ public class Player : MonoBehaviour
     private bool Carry_Flag = false;
     private bool Carry_Flag_Idle = false;
 
+    //足音のアニメーション
+    [SerializeField] AudioClip[] clips;
+    [SerializeField] float pitchRange = 0.1f;
+    protected AudioSource source;
 
     void Start()
     {
         Player_pos = GetComponent<Transform>().position; //最初の時点でのプレイヤーのポジションを取得
         rigd = GetComponent<Rigidbody>(); //プレイヤーのRigidbodyを取得
         animator = GetComponent<Animator>();
+
+
+        //足音
+        // アタッチしたオーディオソースのうち1番目を使用する
+        source = GetComponents<AudioSource>()[0];
     }
 
     void Update()
     {
         if (Input.GetKey("right") || Input.GetKey("left") || Input.GetKey("up") || Input.GetKey("down"))
         {
+            
             animator.SetInteger("StateID",1);
         }        
         else
@@ -56,6 +67,7 @@ public class Player : MonoBehaviour
             animator.SetInteger("StateID", 11);
             if (Input.GetKey("right") || Input.GetKey("left") || Input.GetKey("up") || Input.GetKey("down"))
             {
+
                 animator.SetInteger("StateID", 14);
             }
         }
@@ -78,5 +90,10 @@ public class Player : MonoBehaviour
         }
         Player_pos = transform.position; //プレイヤーの位置を更新
 
+    }
+    public void PlayFootstepSE()
+    {
+        source.pitch = 1.0f + Random.Range(-pitchRange, pitchRange);
+        source.PlayOneShot(clips[0]);
     }
 }

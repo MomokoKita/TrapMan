@@ -1,0 +1,43 @@
+★親切さ
+・盛り上がり
+・プレイヤーの気持ちを考えて作る
+・アクションが出来る所に「！」を付ける
+・メモを置いてヒントを出す
+・体力が低いとマップが表示されなくなる（ジェイソン要素）
+
+★メモ
+１．アクションは「！」で表示され
+　　ヒントは「！」で表示される
+
+２．赤き獣は光によって獲物を探し、
+　　青き悪霊は闇に迷える子羊を狩る
+
+３．青き悪霊は強い光で消滅する
+
+４．赤き獣は目が悪く光を消し、息をひそめよ
+
+やること
+追尾
+メモ
+獣とゴースト
+
+
+モーション
+Everyday Motion Pack Free
+
+子供が自分の姿を取り戻すお話
+
+AUDIO
+足音（素材）
+効の音
+https://kounone.com/footstep-top/
+足音（参照）
+Unityで効果音とBGMを付ける (1) ～足音の基本と応用～
+https://acua-piece.com/post/186042580240/game-audio-with-unity-footsteps
+
+Sprict
+Unityでタグのついたオブジェクトをまとめて操作する方法
+https://tech.pjin.jp/blog/2016/06/28/unity_skill_1/
+
+追いかけてくる敵を作る（追跡機能）
+https://codegenius.org/open/courses/24/sections/116
