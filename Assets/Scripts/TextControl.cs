@@ -12,7 +12,7 @@ public class TextControl : MonoBehaviour
         // オブジェクトからTextコンポーネントを取得
         Text score_text = score_object.GetComponent<Text>();
         // テキストの表示を入れ替える
-        score_text.text = "トイレだ。酷いにおいがする";
+        score_text.text = "トイレだ。";
         Invoke("ResetText", 2);
     }
     public void ResetText()
