@@ -41,3 +41,14 @@ https://tech.pjin.jp/blog/2016/06/28/unity_skill_1/
 
 追いかけてくる敵を作る（追跡機能）
 https://codegenius.org/open/courses/24/sections/116
+
+ステージ　（配置。ライティング）
+https://learning.unity3d.jp/1149/
+
+ボタン判定
+https://www.sejuku.net/blog/56265
+
+ボタン色
+https://tech.pjin.jp/blog/2020/11/30/unity_button/
+
+yes

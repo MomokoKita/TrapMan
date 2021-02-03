@@ -5,9 +5,15 @@ using UnityEngine;
 public class Light : MonoBehaviour
 {
     private bool light_Flag = true;
+
+    //ライトの音
+    [SerializeField] AudioClip[] clips;
+    protected AudioSource source;
     // Start is called before the first frame update
     void Start()
     {
+        //ライト音
+        source = GetComponents<AudioSource>()[0];
     }
 
     // Update is called once per frame
@@ -29,6 +35,7 @@ public class Light : MonoBehaviour
                     lightComponent.enabled = false;
                 }
             }
+            source.PlayOneShot(clips[0]);
             light_Flag = false;
         }
         else if (Input.GetKeyDown("z") && !(light_Flag))
@@ -47,6 +54,7 @@ public class Light : MonoBehaviour
                     lightComponent.enabled = true;
                 }
             }
+            source.PlayOneShot(clips[1]);
             light_Flag = true;
         }
     }
