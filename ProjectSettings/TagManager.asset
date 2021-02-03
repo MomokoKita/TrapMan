@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - Light
+  - Start
+  - Item
+  - Text
   layers:
   - Default
   - TransparentFX
