@@ -5,14 +5,15 @@ using UnityEngine.UI;  // 追加しましょう
 
 public class TextControl : MonoBehaviour
 {
+    [SerializeField] string Message;
+
     public GameObject score_object = null; // Textオブジェクト
     public void OnUserAction()
     {
-        Debug.Log("トイレです");
         // オブジェクトからTextコンポーネントを取得
         Text score_text = score_object.GetComponent<Text>();
         // テキストの表示を入れ替える
-        score_text.text = "トイレだ。";
+        score_text.text = Message;
         Invoke("ResetText", 2);
     }
     public void ResetText()

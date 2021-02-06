@@ -328,7 +328,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: -183}
-  m_SizeDelta: {x: 500, y: 100}
+  m_SizeDelta: {x: 800, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &62603397
 MonoBehaviour:
@@ -351,7 +351,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 417be714fb778de4b8f6f53014ee881e, type: 3}
-    m_FontSize: 20
+    m_FontSize: 40
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -2632,6 +2632,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42b4591d4495de148913483012c1d202, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Message: "\u30C8\u30A4\u30EC\u3060\u3002\u9177\u3044\u306B\u304A\u3044\u304C\u3059\u308B"
   score_object: {fileID: 62603395}
 --- !u!54 &1713503459
 Rigidbody:
