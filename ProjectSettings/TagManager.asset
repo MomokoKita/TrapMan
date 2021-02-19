@@ -9,6 +9,8 @@ TagManager:
   - Item
   - Text
   - Quest
+  - QuestYes
+  - QuestNo
   layers:
   - Default
   - TransparentFX

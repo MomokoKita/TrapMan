@@ -11,7 +11,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/GameScene.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
-    path: Assets/Scene/FadeOut.unity
-    guid: 8263893a344ba5243b98e4895ed979da
+    path: Assets/Scene/GameClear.unity
+    guid: c568763fc365561428bfb50db03cfd29
+  - enabled: 1
+    path: Assets/Scene/GameOver.unity
+    guid: 8e1a4ed165a3bf1479d96679a8279f16
   m_configObjects: {}
