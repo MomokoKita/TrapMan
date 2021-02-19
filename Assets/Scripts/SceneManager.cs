@@ -1,11 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;  // 追加しましょう
 
 public class SceneManager : MonoBehaviour
 {
-    public string　ItemTag = "Item";
     public string TextTag = "Text";
+    public string QuestTag = "Quest";
+
+    public GameObject uiText = null; // Textオブジェクト
 
     // Update is called once per frame  
     void Update()
@@ -20,13 +23,16 @@ public class SceneManager : MonoBehaviour
             //マウスクリックした場所からRayを飛ばし、オブジェクトがあればtrue 
             if (Physics.Raycast(ray.origin, ray.direction, out hit, Mathf.Infinity))
             {
-                if (hit.collider.gameObject.CompareTag(ItemTag))
-                {
-                    hit.collider.gameObject.GetComponent<ItemControl>().OnUserAction();
-                }
                 if (hit.collider.gameObject.CompareTag(TextTag))
                 {
                     hit.collider.gameObject.GetComponent<TextControl>().OnUserAction();
+                }
+                else
+                {
+                    // オブジェクトからTextコンポーネントを取得
+                    Text score_text = uiText.GetComponent<Text>();
+                    // テキストの表示を入れ替える
+                    score_text.text = "";
                 }
             }
         }

@@ -29,7 +29,7 @@ public class ButtonScript : MonoBehaviour
         source.PlayOneShot(clips[0]);
         Debug.Log("START!");  // ログを出力
 
-        Invoke("FadeOut", 1);
+        Invoke("StartGame", 3);
 
     }
     public void OnClick_End()
@@ -38,13 +38,8 @@ public class ButtonScript : MonoBehaviour
         Quit();
     }
 
-    private void FadeOut()
+    private void StartGame()
     {
-        UnityEngine.SceneManagement.SceneManager.LoadScene("FadeOut");
+        UnityEngine.SceneManagement.SceneManager.LoadScene("GameScene");
     }
-
-    //private void StartGame()
-    //{
-    //    UnityEngine.SceneManagement.SceneManager.LoadScene("GameScene");
-    //}
 }
