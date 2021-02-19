@@ -8,6 +8,7 @@ TagManager:
   - Start
   - Item
   - Text
+  - Quest
   layers:
   - Default
   - TransparentFX

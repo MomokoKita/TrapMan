@@ -15,7 +15,6 @@ public class SceneManager : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
-            Debug.Log("左クリック");
             Ray ray = new Ray();
             RaycastHit hit = new RaycastHit();
             ray = Camera.main.ScreenPointToRay(Input.mousePosition);
@@ -23,10 +22,18 @@ public class SceneManager : MonoBehaviour
             //マウスクリックした場所からRayを飛ばし、オブジェクトがあればtrue 
             if (Physics.Raycast(ray.origin, ray.direction, out hit, Mathf.Infinity))
             {
+                if (hit.collider.gameObject.CompareTag(QuestTag))
+                {
+                    hit.collider.gameObject.GetComponent<QuestControl>().OnUserAction();
+                }
+
                 if (hit.collider.gameObject.CompareTag(TextTag))
                 {
                     hit.collider.gameObject.GetComponent<TextControl>().OnUserAction();
                 }
+
+                
+
                 else
                 {
                     // オブジェクトからTextコンポーネントを取得
@@ -36,6 +43,13 @@ public class SceneManager : MonoBehaviour
                 }
             }
         }
+    }
+    public void ResetText()
+    {
+        // オブジェクトからTextコンポーネントを取得
+        Text score_text = uiText.GetComponent<Text>();
+        // テキストの表示を入れ替える
+        score_text.text = "";
     }
 
 }

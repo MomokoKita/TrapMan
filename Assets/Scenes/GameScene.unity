@@ -133,7 +133,7 @@ GameObject:
   - component: {fileID: 12862479}
   - component: {fileID: 12862478}
   - component: {fileID: 12862477}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Cylinder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -373,7 +373,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TextTag: Text
   QuestTag: Quest
-  uiText: {fileID: 0}
+  uiText: {fileID: 62603395}
 --- !u!4 &21003810
 Transform:
   m_ObjectHideFlags: 0
@@ -386,7 +386,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &35539520
 PrefabInstance:
@@ -461,7 +461,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400014, guid: 223b7f5807eec7a4d9dd7196e1a0ba91, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 400014, guid: 223b7f5807eec7a4d9dd7196e1a0ba91, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -598,7 +598,7 @@ GameObject:
   - component: {fileID: 38509070}
   - component: {fileID: 38509069}
   - component: {fileID: 38509068}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Memo
   m_TagString: Text
   m_Icon: {fileID: 0}
@@ -1009,7 +1009,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: -183}
-  m_SizeDelta: {x: 800, y: 100}
+  m_SizeDelta: {x: 1000, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &62603397
 MonoBehaviour:
@@ -1032,7 +1032,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 417be714fb778de4b8f6f53014ee881e, type: 3}
-    m_FontSize: 40
+    m_FontSize: 50
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -3194,7 +3194,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4265924845143494, guid: c3f62e14475a33e4ba04f1ec6734278d, type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4265924845143494, guid: c3f62e14475a33e4ba04f1ec6734278d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -3269,7 +3269,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 495224, guid: 1cb9098d04240cd40a212f5d4858aa26, type: 3}
       propertyPath: m_RootOrder
-      value: 11
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 495224, guid: 1cb9098d04240cd40a212f5d4858aa26, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -3584,7 +3584,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: c764d1d0273921641a0ed3c8bb41e77c, type: 3}
       propertyPath: m_RootOrder
-      value: 14
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: c764d1d0273921641a0ed3c8bb41e77c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -3973,7 +3973,7 @@ RectTransform:
   m_Children:
   - {fileID: 62603396}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -4341,7 +4341,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5148585c18a55b74fa918488d507796a, type: 3}
       propertyPath: m_RootOrder
-      value: 16
+      value: 17
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5148585c18a55b74fa918488d507796a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -5037,7 +5037,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400010, guid: f52bf9d31a4b7c243a3810895f9bc39f, type: 3}
       propertyPath: m_RootOrder
-      value: 11
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 400010, guid: f52bf9d31a4b7c243a3810895f9bc39f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -5451,7 +5451,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 495224, guid: 1cb9098d04240cd40a212f5d4858aa26, type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 495224, guid: 1cb9098d04240cd40a212f5d4858aa26, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -5923,7 +5923,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4385961526916432, guid: 445d2f1be2f6f8f489910c46367a37f2, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4385961526916432, guid: 445d2f1be2f6f8f489910c46367a37f2, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -6166,7 +6166,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 0856310f643782c4eb459901055ba8ad, type: 3}
       propertyPath: m_RootOrder
-      value: 13
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 0856310f643782c4eb459901055ba8ad, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -6591,7 +6591,7 @@ PrefabInstance:
     - target: {fileID: 4286668710296377909, guid: fc304f0df643d724da851b985a86a795,
         type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4286668710296377909, guid: fc304f0df643d724da851b985a86a795,
         type: 3}
@@ -7000,7 +7000,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1166469267}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Quest_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7018,11 +7018,11 @@ Transform:
   m_LocalPosition: {x: 12, y: -0.2, z: 15}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 1779398812}
   - {fileID: 1455810816}
   - {fileID: 1534363940}
   - {fileID: 2073947838}
   - {fileID: 1831866509}
+  - {fileID: 1441688464}
   - {fileID: 1787436883}
   - {fileID: 38509066}
   - {fileID: 1912978689}
@@ -7030,9 +7030,8 @@ Transform:
   - {fileID: 361358892}
   - {fileID: 223339746}
   - {fileID: 1847006107}
-  - {fileID: 1441688464}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1195704574
 PrefabInstance:
@@ -7408,7 +7407,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 0f6e6330f9b801a4bacb8b3c63927da5, type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 0f6e6330f9b801a4bacb8b3c63927da5, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -7533,7 +7532,7 @@ GameObject:
   - component: {fileID: 1286513166}
   - component: {fileID: 1286513165}
   - component: {fileID: 1286513164}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Cylinder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8187,9 +8186,10 @@ GameObject:
   - component: {fileID: 1441688467}
   - component: {fileID: 1441688466}
   - component: {fileID: 1441688465}
-  m_Layer: 5
+  - component: {fileID: 1441688468}
+  m_Layer: 0
   m_Name: Button (3)
-  m_TagString: Untagged
+  m_TagString: Text
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8207,7 +8207,7 @@ Transform:
   m_Children:
   - {fileID: 12862476}
   m_Father: {fileID: 1166469267}
-  m_RootOrder: 12
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &1441688465
 BoxCollider:
@@ -8269,6 +8269,22 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1441688463}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1441688468
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1441688463}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42b4591d4495de148913483012c1d202, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TextTag: Text
+  QuestTag: Quest
+  uiText: {fileID: 62603395}
+  Message: "\u4E0D\u6B63\u89E3"
 --- !u!4 &1455810816 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4385961526916432, guid: 445d2f1be2f6f8f489910c46367a37f2,
@@ -8320,7 +8336,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4608848456336144, guid: 6a7c8c89f88f0ed48a22347c04b178f0, type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4608848456336144, guid: 6a7c8c89f88f0ed48a22347c04b178f0, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -8579,7 +8595,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4225142536492366, guid: f3be12c52c2feee4d989b3f26c8c98ff, type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4225142536492366, guid: f3be12c52c2feee4d989b3f26c8c98ff, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -8801,9 +8817,10 @@ GameObject:
   - component: {fileID: 1534363943}
   - component: {fileID: 1534363942}
   - component: {fileID: 1534363941}
-  m_Layer: 5
+  - component: {fileID: 1534363944}
+  m_Layer: 0
   m_Name: Button
-  m_TagString: Untagged
+  m_TagString: Text
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8821,7 +8838,7 @@ Transform:
   m_Children:
   - {fileID: 2025816456}
   m_Father: {fileID: 1166469267}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &1534363941
 BoxCollider:
@@ -8883,6 +8900,22 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1534363939}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1534363944
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1534363939}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42b4591d4495de148913483012c1d202, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TextTag: Text
+  QuestTag: Quest
+  uiText: {fileID: 62603395}
+  Message: "\u4E0D\u6B63\u89E3"
 --- !u!4 &1542204259 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3518194859740212541, guid: ea5725de8adec31478fc7c8e9d0a8076,
@@ -8930,7 +8963,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 495224, guid: 1cb9098d04240cd40a212f5d4858aa26, type: 3}
       propertyPath: m_RootOrder
-      value: 10
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 495224, guid: 1cb9098d04240cd40a212f5d4858aa26, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -9234,7 +9267,7 @@ GameObject:
   - component: {fileID: 1669201174}
   - component: {fileID: 1669201173}
   - component: {fileID: 1669201172}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Memo (2)
   m_TagString: Text
   m_Icon: {fileID: 0}
@@ -9487,7 +9520,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: ff0c40ae2d3241249a3d79a3a1e24d40, type: 3}
       propertyPath: m_RootOrder
-      value: 12
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: ff0c40ae2d3241249a3d79a3a1e24d40, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -9739,7 +9772,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TextTag: Text
   QuestTag: Quest
-  uiText: {fileID: 0}
+  uiText: {fileID: 62603395}
   Message: "\u30C8\u30A4\u30EC\u3060\u3002\u9177\u3044\u306B\u304A\u3044\u304C\u3059\u308B"
 --- !u!4 &1747907346 stripped
 Transform:
@@ -9827,49 +9860,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1758378022}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1779398811
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1779398812}
-  - component: {fileID: 1779398813}
-  m_Layer: 5
-  m_Name: QuestControl
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1779398812
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1779398811}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1166469267}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1779398813
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1779398811}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 34eb6e26b5d2f1c42b5bbdbd7d0c78c1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1787436882
 GameObject:
   m_ObjectHideFlags: 0
@@ -9884,7 +9874,7 @@ GameObject:
   - component: {fileID: 1787436886}
   - component: {fileID: 1787436885}
   - component: {fileID: 1787436884}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Quest
   m_TagString: Text
   m_Icon: {fileID: 0}
@@ -10430,28 +10420,34 @@ GameObject:
   - component: {fileID: 1831866512}
   - component: {fileID: 1831866511}
   - component: {fileID: 1831866510}
-  m_Layer: 5
+  - component: {fileID: 1831866513}
+  m_Layer: 0
   m_Name: Button (2)
-  m_TagString: Untagged
+  m_TagString: Text
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &1831866509
-Transform:
+--- !u!224 &1831866509
+RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1831866508}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.47000027, y: 2.58, z: 0.92700005}
+  m_LocalPosition: {x: 0, y: 0, z: 0.92700005}
   m_LocalScale: {x: 0.2, y: 0.1, z: 0.2}
   m_Children:
   - {fileID: 1286513163}
   m_Father: {fileID: 1166469267}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -0.47000027, y: 2.58}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!65 &1831866510
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10512,6 +10508,22 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1831866508}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1831866513
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1831866508}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42b4591d4495de148913483012c1d202, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TextTag: Text
+  QuestTag: Quest
+  uiText: {fileID: 62603395}
+  Message: "\u4E0D\u6B63\u89E3"
 --- !u!1001 &1832860883
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10762,7 +10774,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4008794017647016, guid: eef8306c54f201a4e8cd536d25207e32, type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 4008794017647016, guid: eef8306c54f201a4e8cd536d25207e32, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -10869,7 +10881,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 065e3d4b688b6364e917bc3679307906, type: 3}
       propertyPath: m_RootOrder
-      value: 15
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 065e3d4b688b6364e917bc3679307906, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -10911,7 +10923,7 @@ GameObject:
   - component: {fileID: 1912978692}
   - component: {fileID: 1912978691}
   - component: {fileID: 1912978690}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Memo (1)
   m_TagString: Text
   m_Icon: {fileID: 0}
@@ -11592,7 +11604,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4922935041155584, guid: 7f18227a94106cd4885511dc014b3d32, type: 3}
       propertyPath: m_RootOrder
-      value: 10
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 4922935041155584, guid: 7f18227a94106cd4885511dc014b3d32, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -11712,7 +11724,7 @@ GameObject:
   - component: {fileID: 2018334832}
   - component: {fileID: 2018334831}
   - component: {fileID: 2018334830}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Cylinder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11806,7 +11818,7 @@ GameObject:
   - component: {fileID: 2025816459}
   - component: {fileID: 2025816458}
   - component: {fileID: 2025816457}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Cylinder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12068,7 +12080,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 17
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!4 &2047337694 stripped
 Transform:
@@ -12262,9 +12274,10 @@ GameObject:
   - component: {fileID: 2073947841}
   - component: {fileID: 2073947840}
   - component: {fileID: 2073947839}
-  m_Layer: 5
+  - component: {fileID: 2073947842}
+  m_Layer: 0
   m_Name: Button (1)
-  m_TagString: Untagged
+  m_TagString: Text
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12282,7 +12295,7 @@ Transform:
   m_Children:
   - {fileID: 2018334829}
   m_Father: {fileID: 1166469267}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &2073947839
 BoxCollider:
@@ -12344,6 +12357,22 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2073947837}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &2073947842
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2073947837}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42b4591d4495de148913483012c1d202, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TextTag: Text
+  QuestTag: Quest
+  uiText: {fileID: 62603395}
+  Message: "\u6B63\u89E3"
 --- !u!1001 &2091067868
 PrefabInstance:
   m_ObjectHideFlags: 0
