@@ -53,3 +53,10 @@ https://tech.pjin.jp/blog/2020/11/30/unity_button/
 
 テキスト表示
 http://tsubakit1.hateblo.jp/entry/2014/12/06/233000
+
+
+
+審査会メモ
+材質
+カメラを分ける
+forでリストを回し、フラグを取得する
